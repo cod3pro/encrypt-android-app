@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/stars" >
+
+    <Button
+        android:id="@+id/btnrandom"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:text="generate" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnrandom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="172dp"
+        android:gravity="center"
+        android:text="DECRYPT" />
+
+    <Spinner
+        android:id="@+id/spinner01"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn1"
+        android:layout_alignRight="@+id/btnrandom"
+        android:layout_marginBottom="16dp" />
+    <!--
+        android:entries="@array/numbers"
+        android:prompt="@string/prompt"
+    -->
+
+    <Spinner
+        android:id="@+id/spinner02"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/spinner01"
+        android:layout_alignBottom="@+id/spinner01"
+        android:layout_toRightOf="@+id/spinner01"
+        android:entries="@array/numbers"
+        android:prompt="@string/prompt" />
+
+    <Spinner
+        android:id="@+id/spinner03"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/spinner02"
+        android:layout_alignBottom="@+id/spinner02"
+        android:layout_toRightOf="@+id/spinner02"
+        android:entries="@array/numbers"
+        android:prompt="@string/prompt" />
+
+    <Spinner
+        android:id="@+id/spinner04"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/spinner03"
+        android:layout_alignBottom="@+id/spinner03"
+        android:layout_toRightOf="@+id/spinner03"
+        android:entries="@array/numbers"
+        android:prompt="@string/prompt" />
+
+    <Spinner
+        android:id="@+id/spinner05"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/spinner04"
+        android:layout_alignBottom="@+id/spinner04"
+        android:layout_toRightOf="@+id/spinner04"
+        android:entries="@array/numbers"
+        android:prompt="@string/prompt" />
+
+    <TextView
+        android:id="@+id/txtdisplay1"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/spinner01"
+        android:layout_alignLeft="@+id/spinner01"
+        android:layout_marginBottom="14dp"
+        android:gravity="center"
+        android:text="*"
+        android:textColor="#436EEE"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/txtdisplay2"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtdisplay1"
+        android:layout_alignBottom="@+id/txtdisplay1"
+        android:layout_toLeftOf="@+id/spinner03"
+        android:gravity="center"
+        android:text="*"
+        android:textColor="#436EEE"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/txtdisplay3"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtdisplay2"
+        android:layout_alignBottom="@+id/txtdisplay2"
+        android:layout_toLeftOf="@+id/spinner04"
+        android:gravity="center"
+        android:text="*"
+        android:textColor="#436EEE"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/txtdisplay4"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtdisplay3"
+        android:layout_alignBottom="@+id/txtdisplay3"
+        android:layout_toLeftOf="@+id/spinner05"
+        android:gravity="center"
+        android:text="*"
+        android:textColor="#436EEE"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/txtdisplay5"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtdisplay4"
+        android:layout_alignBottom="@+id/txtdisplay4"
+        android:layout_toRightOf="@+id/txtdisplay4"
+        android:gravity="center"
+        android:text="*"
+        android:textColor="#436EEE"
+        android:textSize="30dp" />
+
+</RelativeLayout>
